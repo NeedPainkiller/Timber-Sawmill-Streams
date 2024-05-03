@@ -15,11 +15,25 @@ dependencies {
     implementation 'io.quarkus:quarkus-jdbc-mariadb'
     implementation 'io.quarkus:quarkus-hibernate-orm-panache'
     implementation 'io.quarkus:quarkus-hibernate-reactive-rest-data-panache'
+    implementation 'io.quarkus:quarkus-jdbc-mysql'
     implementation 'io.quarkus:quarkus-redis-cache'
     implementation 'io.quarkus:quarkus-kafka-streams'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-hibernate-orm'
+    implementation 'org.jboss.slf4j:slf4j-jboss-logmanager:2.0.1.Final'
+    implementation 'org.apache.commons:commons-compress:1.26.1'
+
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.2'
+    implementation 'com.github.ua-parser:uap-java:1.5.4'
+
     testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'org.apache.kafka:kafka-streams-test-utils'
+    testImplementation 'org.testcontainers:kafka'
+
 }
 
 group 'xyz.needpankiller'
